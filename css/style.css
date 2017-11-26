@@ -122,7 +122,9 @@ p{
   text-shadow: 0px 5px 20px #231f20;
 }
 .header .inpspired-text {
+  font-size: 20px;
 	font-weight:400;
+  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
 	letter-spacing: -1px;
 	margin:0 0 22px 0 ;
 	color: #231f20;
@@ -159,18 +161,23 @@ color: #fff;
 
 
 .link{
-	padding:15px 35px;
+	padding:0 35px;
 	color:#231f20;
 	font-size:16px;
 	font-weight:400;
-	margin-bottom:20px;
 	transition:all 0.3s ease-in-out;
 	-moz-transition:all 0.3s ease-in-out;
 	-webkit-transition:all 0.3s ease-in-out;
 }
+.go-down-icon i {
+  transition: all .2s ease-in-out;
+}
+.go-down-icon i:hover {
+  transform: scale(1.6);
+  color: #231f20;
+}
 .link:hover {
 	text-decoration:none;
-	transform: scale(2,3);
 }
 
 .link:active, .link:focus {
@@ -247,7 +254,9 @@ color: #fff;
 	overflow:hidden;
 }
 .main-section.alabaster{
-	background:#fafafa;
+  background: url(../img/bgImage.png) left top no-repeat;
+  background-attachment: fixed;
+	/*background:#fafafa;*/
 }
 
 /* Featured Work
@@ -778,14 +787,15 @@ border: 2px solid #fff;
 ---------------------------------*/
 
 .footer{
-	background:url(../img/pw_maze_black_2X.png) left top repeat;
-	padding:35px 0 35px;
+	background-color: #231f20;
+  line-height: 70px;
+  bottom: 0;
 }
-.footer-logo{
-	margin:15px auto 35px;
-	width: 76px;
+.footer .container {
+  display: flex;
 }
 .copyright, .credits{
+  margin: auto;
 	color:#cccccc;
 	font-size:14px;
 	display:block;
@@ -804,6 +814,14 @@ border: 2px solid #fff;
 	color: #fff;
 }
 
+.designed-by {
+  color: #fff;
+  text-decoration: none;
+  float: right;
+}
+.designed-by a:hover {
+  text-decoration: none;
+}
 .res-nav_click {
 	line-height:38px;
 	font-family: 'FontAwesome';

@@ -5,9 +5,9 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, maximum-scale=1">
 
-	<title>Homepage</title>
-	<link rel="icon" href="favicon.png" type="image/png">
-	<link rel="shortcut icon" href="favicon.ico" type="img/x-icon">
+	<title>Fictional Robotics</title>
+	<link rel="icon" href="img/Logo_200x2101.png" type="image/png">
+	<link rel="shortcut icon" href="img/Logo_200x2101.png" type="img/x-icon">
 
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,800italic,700italic,600italic,400italic,300italic,800,700,600' rel='stylesheet' type='text/css'>
@@ -17,16 +17,22 @@
 	<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
 	<link href="css/responsive.css" rel="stylesheet" type="text/css">
 	<link href="css/animate.css" rel="stylesheet" type="text/css">
+	<!-- Page Loading Effect -->
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<!-- End Page Loading Effect -->
 
 	<script type="text/javascript" src="js/jquery.1.8.3.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.js"></script>
 	<script type="text/javascript" src="js/jquery-scrolltofixed.js"></script>
 	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 	<script type="text/javascript" src="js/jquery.isotope.js"></script>
-	<script type="text/javascript" src="js/wow.js"></script>
 	<script type="text/javascript" src="js/classie.js"></script>
+	<script type="text/javascript" src="js/wow.js"></script>
 	<script src="contactform/contactform.js"></script>
-
+	<!-- Page Loading Effect  -->
+	<script src="js/snap.svg-min.js"></script>
+	<!-- End Page Loading Effect  -->
 	<!-- =======================================================
     Theme Name: Knight
     Theme URL: https://bootstrapmade.com/knight-free-bootstrap-theme/
@@ -37,18 +43,25 @@
 </head>
 
 <body>
+
+	<!-- /pageload-overlay -->
+	<div id="loader" class="pageload-overlay" data-opening="M 0,0 0,60 80,60 80,0 z M 80,0 40,30 0,60 40,30 z">
+		<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 80 60" preserveAspectRatio="none">
+			<path d="M 0,0 0,60 80,60 80,0 Z M 80,0 80,60 0,60 0,0 Z"/>
+		</svg>
+	</div><!-- /pageload-overlay -->
+
+<div id="after-load">
+
 	<header class="header" id="header">
 		<!--header-start-->
 		<div class="container">
-			<figure class="logo animated fadeInDown delay-07s">
-				<a href="#"><img src="img/Logo_300x420.png" alt=""></a>
+			<figure class="logo animated zoomIn delay-07s">
+				<img src="img/Logo_300x420.png" alt="Logo">
 			</figure>
-			<h1 class="animated fadeInDown delay-07s">FICTIONAL INVENTIONS</h1>
-			<h3 class="inpspired-text">Inspired by Science Fiction</h3>
-			<!-- <ul class="we-create animated fadeInUp delay-1s">
-				<li>We are a digital agency that loves crafting beautiful websites.</li>
-			</ul> -->
-			<a class="link animated fadeInUp delay-1s servicelink" href="#service"><i class="fa fa-angle-down fa-3x" aria-hidden="true"></i></a>
+			<h1 class="animated rollIn">FICTIONAL ROBOTICS</h1>
+			<h3 class="inpspired-text animated flip delay-02s">Inspired by Science Fiction</h3>
+			<a class="link animated fadeInUp delay-1s go-down-icon servicelink" href="#service"><i class="fa fa-angle-down fa-3x" aria-hidden="true"></i></a>
 		</div>
 	</header>
 	<!--header-end-->
@@ -71,9 +84,8 @@
 	<!--main-nav-end-->
 
 
-
-	<section class="main-section" id="service">
-		<!--main-section-start-->
+<!-- main section start  -->
+	<!-- <section class="main-section" id="service">
 		<div class="container">
 			<h2>Services</h2>
 			<h6>We offer exceptional service with complimentary hugs.</h6>
@@ -122,7 +134,7 @@
 
 			</div>
 		</div>
-	</section>
+	</section> -->
 	<!--main-section-end-->
 
 
@@ -135,7 +147,7 @@
 					<img src="img/iphone.png" alt="">
 				</figure>
 				<div class="col-lg-7 col-sm-8 featured-work">
-					<h2>featured work</h2>
+					<h2>Who We Are</h2>
 					<P class="padding-b">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit.</P>
 					<div class="featured-box">
 						<div class="featured-box-col1 wow fadeInRight delay-02s">
@@ -176,15 +188,15 @@
 	<section class="main-section paddind" id="Portfolio">
 		<!--main-section-start-->
 		<div class="container">
-			<h2>Portfolio</h2>
-			<h6>Fresh portfolio of designs that will keep you wanting more.</h6>
+			<h2>PRODUCTS</h2>
+			<h6>A short description about our produts goes here.</h6>
 			<div class="portfolioFilter">
 				<ul class="Portfolio-nav wow fadeIn delay-02s">
 					<li><a href="#" data-filter="*" class="current">All</a></li>
-					<li><a href="#" data-filter=".branding">Branding</a></li>
-					<li><a href="#" data-filter=".webdesign">Web design</a></li>
-					<li><a href="#" data-filter=".printdesign">Print design</a></li>
-					<li><a href="#" data-filter=".photography">Photography</a></li>
+					<li><a href="#" data-filter=".branding">Product Type 1</a></li>
+					<li><a href="#" data-filter=".webdesign">Product Type 2</a></li>
+					<li><a href="#" data-filter=".printdesign">Product Type 3</a></li>
+					<li><a href="#" data-filter=".photography">Product Type 4</a></li>
 				</ul>
 			</div>
 
@@ -381,22 +393,28 @@
 			</div>
 		</section>
 	</div>
-	<!-- <footer class="footer">
+	<footer class="footer">
 		<div class="container">
-			<div class="footer-logo"><a href="#"><img src="img/Logo_200x2101.png" alt=""></a></div>
-			<span class="copyright">&copy; Knight Theme. All Rights Reserved</span>
-			<div class="credits"> -->
-				<!--
-          All the links in the footer should remain intact.
-          You can delete the links only if you purchased the pro version.
-          Licensing information: https://bootstrapmade.com/license/
-          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Knight
-        -->
-				<!-- <a href="https://bootstrapmade.com/bootstrap-agency-templates/">Bootstrap Agency Templates</a> by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-			</div>
+			<span class="copyright">&copy; Fictional Robotics. All Rights Reserved</span>
+			<span class="designed-by">Designed By, <a href="mailto:gktivity@gmail.com">gktivity</a></span>
 		</div>
-	</footer> -->
+	</footer>
+</div>
 
+		<script type="text/javascript" src="js/svgLoader.js"></script>
+		<!-- Page Loading Effect -->
+		<script type="text/javascript">
+				(function() {
+				var loader = new SVGLoader( document.getElementById( 'loader' ), { speedIn : 300, speedOut : 600, easingIn : mina.easeinout, easingOut : mina.bounce } );
+				loader.show();
+				// after some time hide loader
+				setTimeout( function() {
+					loader.hide();
+					$('#after-load').addClass('show');
+				}, 1000 );
+			})();
+		</script>
+		<!-- End Page Loading Effect -->
 
 	<script type="text/javascript">
 		$(document).ready(function(e) {
@@ -483,6 +501,10 @@
 				});
 				return false;
 			});
+
+
+
+
 
 		});
 	</script>
