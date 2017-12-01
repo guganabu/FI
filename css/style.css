@@ -254,8 +254,8 @@ color: #fff;
 	overflow:hidden;
 }
 .main-section.alabaster{
-  background: url(../img/bgImage.png) left top no-repeat;
-  background-attachment: fixed;
+  /*background: url(../img/bgImage.png) left top no-repeat;
+  background-attachment: fixed;*/
 	/*background:#fafafa;*/
 }
 
