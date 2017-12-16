@@ -226,7 +226,8 @@ color: #fff;
 }
 
 .main-section{
-	padding:90px 0 110px;
+  min-height: 100vh;
+	padding:30px 0 150px;
 }
 
 
@@ -253,19 +254,31 @@ color: #fff;
 .service-list-col2{
 	overflow:hidden;
 }
-.main-section.alabaster{
+.main-section.about{
   /*background: url(../img/bgImage.png) left top no-repeat;
   background-attachment: fixed;*/
 	/*background:#fafafa;*/
 }
 
-/* Featured Work
+/* Whow we are
 ---------------------------------*/
+#about {
+  /*background-image: url(/FI/img/bg-images/roboBg.jpg);*/
+  /*background-repeat: no-repeat;
+  background-attachment: fixed;*/
+}
 .featured-work{
 	font-size:14px;
 }
-.featured-work h2{
-	text-align:left;
+.about .box {
+  padding: 15px;
+  text-align: justify;
+}
+.about .box i {
+  padding: 35px;
+}
+.row {
+  padding-top: 90px;
 }
 .featured-box{
 	padding:0 0 0 0;
@@ -625,7 +638,7 @@ border: 2px solid #fff;
 /* Contact
 ---------------------------------*/
 .main-section.contact{
-	padding:90px 0 100px;
+	padding:30px 0 100px;
 }
 
 .main-section.contact{
