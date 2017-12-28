@@ -101,10 +101,9 @@ p{
 
 /* Header Styles
 ---------------------------------*/
-
 .header{
 	text-align:center;
-	background:url(../img/bgImage.png) left top repeat;
+	background:url(../img/bg-images/BG.png) left top repeat;
   height: 100vh;
 }
 .logo{
@@ -204,8 +203,8 @@ color: #fff;
 	margin:0 1px;
 }
 .main-nav li a{
+  color: #151626;
 	display:inline-block;
-	color:#222222;
 	text-transform:uppercase;
 	font-family: 'Montserrat', sans-serif;
 	text-decoration: none;
@@ -218,7 +217,6 @@ color: #fff;
 
 .main-nav li a:hover{
 	text-decoration:none;
-	color: #7cc576;
 }
 
 .small-logo{
@@ -226,7 +224,7 @@ color: #fff;
 }
 
 .main-section{
-  min-height: 100vh;
+  min-height: 85vh;
 	padding:30px 0 150px;
 }
 
@@ -263,22 +261,32 @@ color: #fff;
 /* Whow we are
 ---------------------------------*/
 #about {
-  /*background-image: url(/FI/img/bg-images/roboBg.jpg);*/
-  /*background-repeat: no-repeat;
-  background-attachment: fixed;*/
+  /*background-image: url(../img/bg-images/BG.png);*/
+  background-image: url('https://www.greyvector.com/wp-content/uploads/2015/07/greyvectorbackground8.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 .featured-work{
 	font-size:14px;
 }
 .about .box {
   padding: 15px;
-  text-align: justify;
+  text-align: center;
+  transition: all .2s ease-in-out;
+}
+.about .box:hover {
+  transform: scale(1.1);
 }
 .about .box i {
   padding: 35px;
 }
 .row {
   padding-top: 90px;
+}
+.about, .about-title {
+  color: #fff;
+  text-shadow: 0px 12px 20px #231f20;
 }
 .featured-box{
 	padding:0 0 0 0;
@@ -342,6 +350,12 @@ color: #fff;
 
 /* Portfolio
 ---------------------------------*/
+#products {
+  /*background-image: url(../img/bg-images/BG.png);*/
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
 .Portfolio-nav{
 	padding:0;
 	margin:0 0 45px 0;
@@ -638,16 +652,21 @@ border: 2px solid #fff;
 /* Contact
 ---------------------------------*/
 .main-section.contact{
-	padding:30px 0 100px;
+	padding:30px 0 30px
 }
-
+.main-section.contact .row {
+  padding: 35px;
+}
 .main-section.contact{
-	background:url(../img/bg-map.png) left 190px no-repeat;
+  background: url(../img/bg-images/contactBg.png) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 .contact-info-box{
 	font-size:15px;
 	margin:0 0 14px 68px;
 	padding-left:0;
+  text-shadow: 0px 7px 20px #121422;
 }
 .contact-info-box h3{
 	font-size: 15px;
@@ -666,6 +685,7 @@ border: 2px solid #fff;
 	margin-right:7px;
 }
 .contact-info-box span{
+  color: #fff;
 	line-height:28px;
 	display:block;
 	overflow:hidden;
@@ -729,10 +749,12 @@ border: 2px solid #fff;
 	transition:all 0.3s ease-in-out;
 	-moz-transition:all 0.3s ease-in-out;
 	-webkit-transition:all 0.3s ease-in-out;
+  background: transparent;
 }
 .input-text:focus {
-	border: 1px solid #7cc576;
+	border: 2px solid #f3db82;
 	outline:0;
+  color: #f3db82;
 	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(124, 197, 118, 0.3);
 	-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(124, 197, 118, 0.3);
 	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(124, 197, 118, 0.3);
@@ -746,22 +768,22 @@ border: 2px solid #fff;
 .input-btn{
 	width:175px;
 	height:50px;
-	background:#7cc576;
+	background:transparent;
 	border-radius:4px;
-	color:#ffffff;
+  border: 1px solid #fff;
+	color:#fff;
 	font-size:14px;
 	text-transform:uppercase;
 	font-family: 'Montserrat', sans-serif;
 	font-weight:400;
-	border:0px;
 	transition:all 0.3s ease-in-out;
 	-moz-transition:all 0.3s ease-in-out;
 	-webkit-transition:all 0.3s ease-in-out;
 }
 
 .input-btn:hover{
-	background: #111;
-	color: #fff;
+	background: #f3db82;
+	color: #272a2c;
 }
 
 .validation {

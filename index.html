@@ -62,7 +62,7 @@
 			</figure>
 			<h1 class="animated rollIn">FICTIONAL ROBOTICS</h1>
 			<h3 class="inpspired-text animated zoomIn delay-02s">Inspired by Science Fiction</h3>
-			<a class="link animated fadeInUp delay-1s go-down-icon servicelink" href="#products"><i class="fa fa-angle-down fa-3x" aria-hidden="true"></i></a>
+			<a class="link animated fadeInUp delay-1s go-down-icon productLink" href="#products"><i class="fa fa-angle-down fa-3x" aria-hidden="true"></i></a>
 		</div>
 	</header>
 	<!--header-end-->
@@ -71,13 +71,11 @@
 		<!--main-nav-start-->
 		<div class="container">
 			<ul class="main-nav">
-				<li><a href="#header">Home</a></li>
-				<!-- <li><a href="#service">Services</a></li> -->
-				<li><a href="#products">Products</a></li>
+				<li><a class="menu-item" href="#header">Home</a></li>
+				<li><a class="menu-item" href="#products">Products</a></li>
 				<li class="small-logo"><a href="#header"><img src="img/Logo_200x2101.png" alt=""></a></li>
-				<!-- <li><a href="#client">Clients</a></li> -->
-				<li><a href="#about">About</a></li>
-				<li><a href="#contact">Contact</a></li>
+				<li><a class="menu-item" href="#about">About</a></li>
+				<li><a class="menu-item" href="#contact">Contact</a></li>
 			</ul>
 			<a class="res-nav_click" href="#"><i class="fa-bars"></i></a>
 		</div>
@@ -188,17 +186,17 @@
 
 	<section class="main-section alabaster about" id="about">
 		<div class="container">
-				<h2 class="col-sm-12">Who We Are</h2>
+				<h2 class="col-sm-12 about-title">Who We Are</h2>
 				<div class="row" align="center">
-					<div class="col-md-4 wow box fadeInRight delay-02s">
+					<div class="col-md-4 box animated zoomIn delay-02s">
 						<i class="fa fa-cogs fa-5x"></i>
 						<p>Fictional Robotics is an innovative products development company in the areas of Robotics and Automations located in Chennai.</p>
 					</div>
-					<div class="col-md-4 wow box fadeInRight delay-04s">
+					<div class="col-md-4 box animated zoomIn delay-04s">
 						<i class="fa fa-code fa-5x"></i>
 						<p>Fictional Robotics was founded with a vision to make futuristic and novel Robotics products for a wide range of applications Suitable for the Indian environment and Economic conditions.</p>
 					</div>
-					<div class="col-md-4 wow box fadeInRight delay-06s">
+					<div class="col-md-4 box animated zoomIn delay-06s">
 						<i class="fa fa-cubes fa-5x"></i>
 						<p>We are a bunch of energetic engineers with creational energy. We aim to develop and market novel and smart products for wide range of applications to the next step of evolution.</p>
 					</div>
@@ -290,55 +288,55 @@
 	<!--main-section team-end-->
 
 
-	<div class="container">
-		<section class="main-section contact" id="contact">
-			<h2>Contact Us</h2>
-			<div class="row">
-				<div class="col-lg-6 col-sm-7 wow fadeInLeft">
-					<div class="contact-info-box phone clearfix">
-						<h3><i class="fa-phone"></i>Mobile:</h3>
-						<span>+91 9962 999944</span>
-					</div>
-					<div class="contact-info-box email clearfix">
-						<h3><i class="fa-pencil"></i>email:</h3>
-						<span>rajanflows@gmail.com</span>
-					</div>
-					<ul class="social-link">
-						<li class="facebook"><a href="#"><i class="fa-facebook"></i></a></li>
-						<li class="gplus"><a href="#"><i class="fa-google-plus"></i></a></li>
-					</ul>
+
+	<section class="main-section contact" id="contact">
+		<div class="container">
+		<div class="row">
+			<div class="col-lg-6 col-sm-7 wow fadeInLeft">
+				<div class="contact-info-box phone clearfix">
+					<h3><i class="fa-phone"></i>Mobile:</h3>
+					<span>+91 9962 999944</span>
 				</div>
-				<div class="col-lg-6 col-sm-5 wow fadeInUp delay-05s">
-					<div class="form">
+				<div class="contact-info-box email clearfix">
+					<h3><i class="fa-envelope"></i>email:</h3>
+					<span>rajanflows@gmail.com</span>
+				</div>
+				<ul class="social-link">
+					<li class="facebook"><a href="#"><i class="fa-facebook"></i></a></li>
+					<li class="gplus"><a href="#"><i class="fa-google-plus"></i></a></li>
+				</ul>
+			</div>
+			<div class="col-lg-6 col-sm-5 wow fadeInUp delay-05s">
+				<div class="form">
 
-						<div id="sendmessage">Your message has been sent. Thank you!</div>
-						<div id="errormessage"></div>
-						<form action="https://formspree.io/rajanflows@gmail.com" method="POST" role="form" class="contactForm">
-							<div class="form-group">
-								<input type="text" name="name" class="form-control input-text" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-								<div class="validation"></div>
-							</div>
-							<div class="form-group">
-								<input type="email" class="form-control input-text" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-								<div class="validation"></div>
-							</div>
-							<div class="form-group">
-								<input type="text" class="form-control input-text" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-								<div class="validation"></div>
-							</div>
-							<div class="form-group">
-								<textarea class="form-control input-text text-area" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-								<div class="validation"></div>
-							</div>
-							<input type="hidden" name="_next" value="http://fictionalrobotics.com" />
+					<div id="sendmessage">Your message has been sent. Thank you!</div>
+					<div id="errormessage"></div>
+					<form action="https://formspree.io/rajanflows@gmail.com" method="POST" role="form" class="contactForm">
+						<div class="form-group">
+							<input type="text" name="name" class="form-control input-text" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+							<div class="validation"></div>
+						</div>
+						<div class="form-group">
+							<input type="email" class="form-control input-text" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+							<div class="validation"></div>
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control input-text" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+							<div class="validation"></div>
+						</div>
+						<div class="form-group">
+							<textarea class="form-control input-text text-area" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+							<div class="validation"></div>
+						</div>
+						<input type="hidden" name="_next" value="http://fictionalrobotics.com" />
 
-							<div class="text-center"><button type="submit" class="input-btn">Send Message</button></div>
-						</form>
-					</div>
+						<div class="text-center"><button type="submit" class="input-btn">Send Message</button></div>
+					</form>
 				</div>
 			</div>
-		</section>
+		</div>
 	</div>
+</section>
 	<footer class="footer">
 		<div class="container">
 			<span class="copyright">&copy; Fictional Robotics. All Rights Reserved</span>
@@ -385,7 +383,7 @@
 	<script type="text/javascript">
 		$(window).load(function() {
 
-			$('.main-nav li a, .servicelink').bind('click', function(event) {
+			$('.main-nav li a, .productLink').bind('click', function(event) {
 				var $anchor = $(this);
 
 				$('html, body').stop().animate({
@@ -447,6 +445,11 @@
 				return false;
 			});
 
+			// //make active link
+			// $('.menu-item').click(function() {
+			// 	$('.menu-item').removeClass('active');
+			// 	$(this).addClass('active');
+			// });
 
 
 
